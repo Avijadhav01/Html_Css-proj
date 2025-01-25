@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iBlog- heaven for blogers</title>
+
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blogpost.css">
+
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="nav">
+        <!-- Left side  -->
+        <div class="nav-left">
+            <img src="images/logo.jpeg" alt="logo">
+            <ul class="nav-list" id="nav-list">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+                <!-- <li><a href="#" class="close-btn">&times;</a></li> Close button -->
+                <li class="close-btn"><i class="fa-solid fa-chevron-up close-btn"></i></li>
+
+            </ul>
+        </div>
+        <div class="bar"><i class="fa-solid fa-bars"></i></div>
+
+        <!-- Right side -->
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" name="query" placeholder="Search Artical">
+                <button class="btn">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Blog Post Section -->
+        <div class="post font2 max-width2 m-auto">
+            <h2>Blog Post</h2>
+            <p class="post-info">Posted by <strong>John Doe</strong> on <strong>January 21, 2025</strong></p>
+            <div class="blog-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed
+                    cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                    Praesent mauris.
+                </p>
+                <p>Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class
+                    aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitur
+                    sodales ligula in libero.
+
+                    libero voluptatem. Quod, eius.
+                    Unde ipsa error, consectetur non consequatur praesentium nulla, quisquam dicta cupiditate modi saepe
+                    quo earum cum ipsum repudiandae rem. Veniam tempora sit, dolorem nobis expedita sed facere. Ipsum,
+                    inventore magni!
+                </p><br>
+                <p>
+                    perspiciatis deleniti expedita quisquam quaerat nobis corrupti iure repudiandae veniam, hic rem
+                    inventore, debitis atque eum modi commodi?
+                    Iste nam ab, in fugiat enim, temporibus fuga velit consequatur dicta laudantium quos quas?
+                    Consequatur, nesciunt harum nostrum nemo et suscipit rem, repellat autem magni id nam vitae
+                    lore architecto!
+                    Quos saepe sint ducimus quo praesentium, harum odit magnam facilis expedita dolorum reiciendis, eos
+                    amet temporibus officia nesciunt consectetur eaque natus dolorem consequatur optio velit
+                    consequuntur itaque ad. Cupiditate, consequuntur.
+                    Aspernatur commodi eligendi nisi illo in suscipit debitis odio reprehenderit non? Iste eligendi
+                    tempora quis qui molestias facilis optio voluptatem! Magni repudiandae, dolorem
+                    culpa quo tempora vel aliquam, enim architecto eum ut voluptatem? Numquam hic sed autem eos quo?
+                </p>
+            </div>
+        </div>
+
+        <!-- Comments Section -->
+        <div class="comments">
+            <h3>Comments</h3>
+
+            <div class="comment">
+                <p><strong>Alice</strong> - January 22, 2025</p>
+                <p>This is a great post! I really enjoyed reading it. Keep up the good work!</p>
+            </div>
+
+            <div class="comment">
+                <p><strong>Bob</strong> - January 23, 2025</p>
+                <p>Very informative! Looking forward to reading more blog posts from you.</p>
+            </div>
+
+            <div class="comment">
+                <p><strong>Charlie</strong> - January 24, 2025</p>
+                <p>Thanks for sharing! I found it very helpful.</p>
+            </div>
+
+            <!-- Add a comment form -->
+            <h4>Add Your Comment :</h4>
+
+            <form action="#" method="POST">
+                <input type="text" id="name" name="name" placeholder="Enter Your Name.." required><br>
+                <textarea id="comment" name="comment" rows="4" cols="50" placeholder="Type Comment here..."
+                    required></textarea><br><br>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My Blog. All Rights Reserved.</p>
+    </footer>
+</body>
+<script src="js/script.js"></script>
+
+</html>

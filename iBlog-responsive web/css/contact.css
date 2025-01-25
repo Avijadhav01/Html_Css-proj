@@ -1,0 +1,159 @@
+
+body{
+    overflow-x: hidden;
+
+}
+
+.nav{
+    width: 100vw;
+}
+
+.contact-nav-right{
+    display: none;
+}
+
+.con{
+    height: 80vh;
+    width: 100vw;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contact-form{
+    padding: 20px;
+    width: 60vw;
+}
+
+.contact-form h2{
+    padding-top: 20px;
+    font-size: 30px;
+}
+
+.form-box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    margin: 20px;
+}
+
+.form-box input, textarea{
+    padding: 8px 12px;
+    width: 300px;
+}
+
+.submitbtn{
+    font-size: 16px;
+    font-family: var(--font2);
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-left: 100px;   
+    margin-top: 30px; 
+    padding: 10px ;
+    width: 300px;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.submitbtn:hover{
+    color: white;
+    background-color: var(--main-bg-color);
+}
+
+#textarea{
+    height: 80px;
+    width: 300px;
+    /* overflow-y: scroll; */
+}
+
+.extra{
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.extra::after{
+    content: "";
+    background: url("/images/happy.jpeg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    position: absolute;
+    width: 100%;
+    height: inherit;
+    opacity: 0.2;
+
+}
+
+
+.foot{
+    height: 80px;
+    width: 100%;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: whitesmoke;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    position: absolute;
+    bottom: 0;
+}
+
+.foot a{
+    color: black;
+}
+
+.foot p{
+    color: var(--main-bg-color);
+}
+
+
+@media (max-width:600px) {
+    .con{
+
+        flex-direction: column;
+        justify-content: space-between;
+        height: 85vh;
+        /* overflow: hidden; */
+    
+    }
+
+    .con h2{
+        padding: 8px;
+        font-size: 20px;
+    }
+    #textarea{
+        height: 50px;
+    }
+
+    .contact-form{
+        height: 35vh;
+        width: 100vw;
+        padding: 5px;
+        margin-top: 0;
+
+    }
+
+    .extra{
+        width: 100vw;
+        height: 30vh;
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .foot{
+        position: unset;
+        flex-direction: column;
+    }
+
+}
